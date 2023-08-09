@@ -142,13 +142,13 @@ Page({
 
     navgitor(text) {
         console.log(text.currentTarget.dataset.info)
-        if (text.currentTarget.dataset.info === '课程') {
+        if (text.currentTarget.dataset.info === '推荐') {
             wx.navigateTo({
-                url: '/packageA/pages/course/course',
+                url: '/pages/home/home',
             })
-        } else if (text.currentTarget.dataset.info === '资讯') {
+        } else if (text.currentTarget.dataset.info === '发布') {
             wx.switchTab({
-                url: '/pages/zixun/zixun',
+                url: '/pages/fabu/fabu',
             })
         } else {
             wx.navigateTo({

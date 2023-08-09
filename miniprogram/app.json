@@ -3,7 +3,7 @@
         "pages/home/home",
         "pages/index/index",
         "pages/logs/logs",
-        "pages/zixun/zixun"
+        "pages/fabu/fabu"
     ],
     "subpackages": [
         {
@@ -28,20 +28,20 @@
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "/images/index.png",
-                "selectedIconPath": "/images/indexselect.png"
+                "iconPath": "/images/homeUn.png",
+                "selectedIconPath": "/images/homeSelected.png"
             },
             {
-                "pagePath": "pages/zixun/zixun",
-                "text": "学习",
-                "iconPath": "/images/study.png",
-                "selectedIconPath": "/images/studyselect.png"
+                "pagePath": "pages/fabu/fabu",
+                "text": "发布",
+                "iconPath": "/images/fabuUn.png",
+                "selectedIconPath": "/images/fabuSelected.png"
             },
             {
                 "pagePath": "pages/index/index",
                 "text": "我的",
-                "iconPath": "/images/my.png",
-                "selectedIconPath": "/images/myselect.png"
+                "iconPath": "/images/myUn.png",
+                "selectedIconPath": "/images/mySelected.png"
             }
         ]
     },
