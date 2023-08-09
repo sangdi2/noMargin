@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.23",
+    "me-waterfall": "^1.1.2",
+    "wx-server-sdk": "^2.6.3"
+  }
+}

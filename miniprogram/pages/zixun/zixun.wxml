@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<view class="box">
+
+   <view class="big" wx:for="{{vertical}}" wx:key="id" bindtap="gocontent" data-info="{{item.id}}">
+       <image src="{{item.url}}"></image>
+       <view class="cont">
+       <text>{{item.title}}
+       </text></view>
+   </view>
+  
+</view>

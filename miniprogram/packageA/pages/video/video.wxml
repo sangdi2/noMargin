@@ -1,0 +1,31 @@
+<!--pages/video/video.wxml-->
+<view class="course">
+  <view  style="width: 100%;">
+    <video style="width: 100%;"
+      id="myVideo" 
+      src="{{course.videourl}}" 
+      autoplay="true"
+      loop="true"
+      direction="-90"
+      
+     ></video>
+    
+  </view>
+  <view class="cc">
+   <view class="tui">
+       <view class="yellow"></view>
+       <h2 style="font-size: 30rpx;font-weight: 600;line-height: 50rpx;">推荐课程</h2>
+   </view>
+   <view class="more">  </view>
+</view>
+<view class="video">
+      <view class="videocourse"  wx:for="{{tuijiancourse}}" wx:key="id">
+          <image src="{{item.url}}"></image>
+          <view class="content">
+            <view class="title">{{item.title}}</view>
+            <view class="description">{{item.description}}</view>
+            <button class="btn" bindtap="btn" data-info="{{item.id}}">查看详情</button>
+          </view>
+      </view>
+   </view>
+</view>

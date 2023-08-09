@@ -1,0 +1,11 @@
+<!--pages/question/question.wxml-->
+<scroll-view class="box" scroll-y="true">
+    <view class="title">低碳知识小测验</view>
+    <scroll-view class="con" wx:for="{{getquestion}}" wx:key="id" scroll-y="true">
+        <view class="question">{{item.question}}</view>
+        <view class="a" bindtap="commpare" data-info="{{item.id}},{{item.a}}" style="color:{{color}}" >A.{{item.a}}</view>
+        <view class="b" bindtap="commpare" data-info="{{item.id}},{{item.b}}">B.{{item.b}}</view>
+        <view class="c" bindtap="commpare" data-info="{{item.id}},{{item.c}}">C.{{item.c}}</view>
+        
+    </scroll-view>
+</scroll-view>

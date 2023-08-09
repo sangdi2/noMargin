@@ -1,0 +1,19 @@
+<!--pages/content/content.wxml-->
+<view class="txt" >
+<view class="box">{{getver.title}}</view>
+<scroll-view class="content" scroll-y="true">
+    <image src="{{getver.url}}"></image>
+    <text>{{getver.title}}</text>
+    <text>
+          {{getver.text}}
+    </text>
+</scroll-view>
+<view class="like" wx:if="{{getver.islike==='false'}}" bindtap="changefalse">
+<image src="/images/unlike.png"></image>
+
+</view>
+<view class="like" wx:elif="{{getver.islike==='true'}}" bindtap="changetrue">
+<image src="/images/like.png"></image>
+
+</view>
+</view>

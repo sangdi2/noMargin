@@ -1,0 +1,43 @@
+/* pages/zixun/zixun.wxss */
+/* page {
+    height: 100%;
+} */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box .big {
+    width: 50%;
+    height: 500rpx;
+    
+    justify-content: space-between;
+    border: 4rpx solid #efefef;
+    box-sizing: border-box;
+    border-radius: 50rpx;
+    box-shadow: 1rpx 1rpx 20rpx #efefef;
+}
+
+.box .big image{
+    width: 100%;
+    height: 70%;
+    border-radius: 50rpx;
+}
+.box .big .cont {
+width: 350rpx;
+height: 26%;
+background-color:#ffcc33;
+margin: 0 auto;
+border-radius: 100rpx;
+font-size: 30rpx;
+padding: 30rpx;
+box-sizing: border-box;
+font-weight: 600;
+}
+.box .big .cont text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}

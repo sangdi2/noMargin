@@ -1,0 +1,74 @@
+/* pages/video/video.wxss */
+.course {
+   
+    padding: 20rpx;
+    line-height: 50rpx;
+}
+.course .cc {
+    display: flex;
+    justify-content: space-between;
+}
+.course .tui .yellow {
+    width: 12rpx;
+    height: 50rpx;
+    background-color: #ffcc33;
+    border-radius: 6rpx;
+    margin-right: 10rpx;
+}
+.course .tui {
+    display: flex;
+}
+.course .more {
+    font-size: 23rpx;
+    color: #c5c5c5;
+}
+.course .video .videocourse {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #c5c5c5;
+    height: 300rpx;
+    margin:15rpx;
+    border-radius: 30rpx;
+    position: relative;
+    box-shadow: 2rpx 2rpx 4rpx #c5c5c5;
+}
+.course .video .videocourse image {
+    width: 300rpx;
+    height: 100%;
+}
+.course .video .videocourse .content {
+   position: absolute;
+   top:15rpx;
+   right: 50rpx;
+}
+.course .video .videocourse .content .btn {
+    width: 255rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    border-radius: 100rpx;
+    margin-top: 10rpx;
+    line-height:20rpx ;
+    background-color: #ffcc33;
+    color: white;
+}
+.course .video .videocourse .content .title {
+    font-size: 30rpx;
+    font-weight: 600;
+}
+.course .video .videocourse .content .description {
+  
+    width: 259rpx;
+   height: 150rpx;
+   color: #ffcc33;
+   white-space:pre-line;
+   
+   white-space: pre-line;
+   word-wrap: break-word;
+   word-break: break-all;
+   font-size: 30rpx;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}

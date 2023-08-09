@@ -1,0 +1,37 @@
+<!--pages/course/course.wxml-->
+<view class="course">
+   <view class="cc">
+   <view class="tui">
+       <view class="yellow"></view>
+       <h2 style="font-size: 30rpx;font-weight: 600;line-height: 50rpx;">搜索结果</h2>
+   </view>
+   <view class="more">  </view>
+</view>
+<van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="没有你想要的商品哦~" wx:if="{{isgoods}}" />
+<view class="product" wx:for="{{searchedGoods}}" wx:key="_id">
+        <view class="pic">
+            <image class="image" mode="widthFix" src="{{item.image}}"></image>
+        </view>
+        <view class="text">
+            <view class="title">{{item.title}}</view>
+            <view class="info">
+
+                <view class="row">
+                   
+                    <view class="right">{{item.decription}}</view>
+                </view>
+
+                <view class="row">
+                    <view class="right">{{item.address}}</view>
+                </view>
+
+        
+                <view class="row">
+                   
+                    <view class="right" style="color: red;">￥{{item.price}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

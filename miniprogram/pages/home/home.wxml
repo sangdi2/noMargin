@@ -1,0 +1,66 @@
+<!--pages/home/home.wxml-->
+
+
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange" bind:search="onSearch" background="#ffcc33">
+    <view slot="action" bind:tap="goSearch" data-info="{{value}}" style="padding:0 20rpx;">搜索</view>
+</van-search>
+
+
+<swiper indicator-dots="true" circular="true" autoplay="true">
+    <swiper-item wx:for="{{swiper}}" wx:key="id">
+        <image src="{{item.url}}"></image>
+    </swiper-item>
+
+</swiper>
+<view class="nav">
+    <view wx:for="{{nav}}" wx:key="id" bindtap="navgitor" data-info="{{item.text}}">
+        <image src="{{item.url}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+
+</view>
+
+<van-dropdown-menu active-color="#ffcc33">
+    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" style="font-size: 30rpx" bind:change="changeHome"/>
+    <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="changeCategory"/>
+</van-dropdown-menu>
+
+
+<view class="course">
+    <view class="cc">
+        <view class="tui">
+            <view class="yellow"></view>
+            <h2 style="font-size: 30rpx;font-weight: 600;line-height: 50rpx;">推荐二手商品</h2>
+        </view>
+        <view class="more"> </view>
+    </view>
+    <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="没有商品哦，快去发布吧~" wx:if="{{isgoods}}" />
+
+    <view class="product" wx:for="{{goodsinformation}}" wx:key="_id">
+        <view class="pic">
+            <image class="image" mode="widthFix" src="{{item.image}}"></image>
+        </view>
+        <view class="text">
+            <view class="title">{{item.title}}</view>
+            <view class="info">
+
+                <view class="row">
+                   
+                    <view class="right">{{item.decription}}</view>
+                </view>
+
+                <view class="row">
+                    <view class="right">{{item.address}}</view>
+                </view>
+
+        
+                <view class="row">
+                   
+                    <view class="right" style="color: red;">￥{{item.price}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+</view>

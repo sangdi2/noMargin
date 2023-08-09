@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/zixun/zixun"
+    ],
+    "subpackages": [
+        {
+            "root": "packageA",
+            "pages": [
+                "pages/course/course",
+                "pages/video/video",
+                "pages/content/content",
+                "pages/like/like",
+                "pages/question/question"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffcc33",
+        "navigationBarTitleText": "无差价二手交易平台",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "/images/index.png",
+                "selectedIconPath": "/images/indexselect.png"
+            },
+            {
+                "pagePath": "pages/zixun/zixun",
+                "text": "学习",
+                "iconPath": "/images/study.png",
+                "selectedIconPath": "/images/studyselect.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "我的",
+                "iconPath": "/images/my.png",
+                "selectedIconPath": "/images/myselect.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-search": "@vant/weapp/search/index",
+        "van-empty": "@vant/weapp/empty/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+
+        
+    }
+    
+}

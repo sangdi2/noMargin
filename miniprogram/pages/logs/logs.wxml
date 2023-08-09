@@ -1,0 +1,50 @@
+<!--logs.wxml-->
+<view class="container">
+  <form bindsubmit="submit">
+    <view>
+      <text>姓名：</text>
+      <input name="name" value="{{name}}" />
+    </view>
+    <view>
+      <text>性别：</text>
+      <radio-group name="gender">
+        <label wx:for="{{gender}}" wx:key="value">
+          <radio value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view>
+      <text>坐车频率
+</text>
+      <checkbox-group name="skills">
+        <label wx:for="{{skills}}" wx:key="value">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view>
+      <text>最常使用的交通工具
+</text>
+      <checkbox-group name="skills">
+        <label wx:for="{{skill}}" wx:key="value">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view>
+      <text>您认为汽车尾气对环境的污染有怎样的影响？
+</text>
+      <checkbox-group name="skil">
+        <label wx:for="{{skill}}" wx:key="value">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" /> {{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view>
+      <text>您的意见：</text>
+      <textarea name="opinion" value="{{opinion}}" />
+    </view>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+

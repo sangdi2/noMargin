@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-8gnx9gwh27bc98b9 --n quickstartFunctions --r --project "C:\Users\sangdi\Desktop\无差价" --report_first --report
